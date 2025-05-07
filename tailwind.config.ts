@@ -6,6 +6,7 @@ export default {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  
   theme: {
     extend: {
       colors: {
@@ -13,6 +14,11 @@ export default {
         foreground: "var(--foreground)",
       },
     },
+
+    scale: {
+      '-1': '-1', // Correct the key by removing the space
+    },
+    
   },
   plugins: [],
 } satisfies Config;
